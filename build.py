@@ -1,4 +1,43 @@
+import os
+import json
 
+def generate_project_html(project):
+    html = f'''
+    <div class="border-4 border-black">
+        <h2>{project['name']}</h2>
+        <p>{project['description']}</p>
+        <div class="technologies">
+    '''
+    for technology in project['technologies']:
+        html += f'<p>{technology}</p>'
+    html += '''
+        </div>
+        <div class="images">
+    '''
+    for image in project['images']:
+        html += f'<img src="images/{image}" alt="{image}">'
+    html += '''
+        </div>
+    </div>
+    '''
+    return html
+
+directory = 'projects'
+output_file = 'index.html'
+projects = []
+for filename in os.listdir(directory):
+    if filename.endswith('.json'):
+        with open(os.path.join(directory, filename)) as file:
+            project_data = json.load(file)
+            projects.append(project_data)
+
+projects_html = ''
+for project in projects:
+    projects_html += generate_project_html(project)
+
+# Create the index.html file
+with open(output_file, 'w') as output:
+    html_content = f'''
     <!DOCTYPE html>
     <html>
     <head>
@@ -19,19 +58,12 @@
         </div>
         <div class="py-3">
             <h1 class="text-5xl pb-2 font-black">Projects</h1>
-            
-    <div class="border-4 border-black">
-        <h2>Temp Project</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor pharetra magna non sollicitudin. Maecenas et mi nunc. Maecenas nisl odio, ultrices accumsan imperdiet sit amet, molestie eu mi. Praesent pulvinar urna ut erat convallis, id porta nulla scelerisque. Morbi luctus massa vel ex fermentum molestie. Proin odio risus, condimentum in diam in, facilisis volutpat odio. Phasellus in quam dolor. Cras finibus nec lectus at feugiat. Quisque mollis sem ac felis mattis venenatis eu id lectus. Proin rhoncus sapien id arcu ullamcorper fermentum. Nam maximus sodales cursus.</p>
-        <div class="technologies">
-    <p>HTML</p><p>CSS</p><p>JS</p>
-        </div>
-        <div class="images">
-    <img src="images/image1.jpeg" alt="image1.jpeg"><img src="images/image2.jpeg" alt="image2.jpeg">
-        </div>
-    </div>
-    
+            {projects_html}
         </div>
     </body>
     </html>
-    
+    '''
+    output.write(html_content)
+
+print("Successfully generated HTML")
+
