@@ -9,6 +9,7 @@ module.exports = {
             accent: "#81B29A",
         },
         screens: {
+            'sm': '380px',
             '2xl': '2000px',
         },
       }

@@ -23,7 +23,7 @@ def generate_project_html(project):
             <h2 class="text-2xl font-bold">{project['name']}</h2>
             <div class="flex gap-3 items-center">
                 <a target="_blank" rel="noreferrer" href={project["giturl"]}>
-                    <img class="w-6" src="assets/github-mark.png"/>
+                    <img class="w-6" src="assets/github.png"/>
                 </a>
                 {f'<a target="_blank" rel="noreferrer" href={project["url"]}><img class="w-6" src="assets/web.png"/></a>'
                  if project.get("url") else ''}
@@ -58,6 +58,7 @@ with open(output_file, 'w') as output:
     <!DOCTYPE html>
     <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
@@ -65,14 +66,21 @@ with open(output_file, 'w') as output:
         <script src="assets/main.js" defer></script>
         <title>HOME | david</title>
     </head>
-    <body class="bg-primary">
-        <div class="flex justify-between">
-            <p id="title" class="font-bold pb-5 underline text-lg">David Pullinger</p>
-            <p>github</p>
+    <body class="bg-primary py-4 px-6 md:py-8 md:px-12">
+        <div class="flex justify-between items-center mb-5">
+            <p id="title" class="font-bold underline text-lg">David Pullinger</p>
+            <div class="flex gap-3 items-center">
+                <a href="https://github.com/DavidPullinger" target="_blank" rel="noreferrer">
+                    <img class="w-6" src="assets/github.png"/>
+                </a>
+                <a href="https://www.linkedin.com/in/david-pullinger-94a3a420b/" target="_blank" rel="noreferrer">
+                    <img class="w-6" src="assets/linkedin.png"/>
+                </a>
+            </div>
         </div>
-        <div class="py-3 h-screen relative">
-            <h1 class="text-[100px] pb-3 font-bold mono">$ whoami<span class="blinking-cursor">|</span></h1>
-            <div class="text-lg flex flex-col gap-3">
+        <div class="py-3 h-[100svh] relative">
+            <h1 class="text-5xl sm:text-6xl !leading-normal md:text-[100px] pb-3 font-bold mono">$ whoami<span class="blinking-cursor">|</span></h1>
+            <div class="text-base md:text-lg flex flex-col gap-3">
                 <div>
                     <p class="text-secondary font-bold text-2xl">01</p>
                     <p>Dynamic, results-driven recent graduate with a robust academic background in Computer Science and Mathematics.</p>
@@ -86,10 +94,10 @@ with open(output_file, 'w') as output:
                     <p>Hands-on experience in full-stack development and a keen interest in cutting-edge technologies like big data, blockchain, and machine learning.</p>
                 </div>
             </div>
-            <div id="scroll-indicator" class="absolute bottom-[12%] ml-[50%] -translate-x-1/2 border-4 border-secondary rounded-full h-20 w-10"></div>
+            <div id="scroll-indicator" class="absolute bottom-[12%] right-0 border-4 border-secondary rounded-full h-20 w-10"></div>
         </div>
         <div class="py-3 flex flex-col gap-3">
-            <h1 class="text-[100px] pb-3 font-bold mono tracking-tighter">$ ls projects<span class="blinking-cursor">|</span></h1>
+            <h1 class="text-5xl sm:text-6xl !leading-normal md:text-[100px] pb-3 font-bold mono tracking-tighter">$ ls projects<span class="blinking-cursor">|</span></h1>
             <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-6">
                 {projects_html}
             </div>

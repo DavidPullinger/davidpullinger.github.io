@@ -546,12 +546,16 @@ video {
   bottom: 12%;
 }
 
-.ml-\[50\%\] {
-  margin-left: 50%;
+.right-0 {
+  right: 0px;
 }
 
 .-mt-3 {
   margin-top: -0.75rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .flex {
@@ -566,13 +570,13 @@ video {
   height: 5rem;
 }
 
+.h-\[100svh\] {
+  height: 100svh;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-10 {
@@ -589,11 +593,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-1 {
@@ -674,6 +673,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -682,6 +686,11 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-3 {
@@ -697,8 +706,19 @@ video {
   line-height: 2rem;
 }
 
-.text-\[100px\] {
-  font-size: 100px;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -715,6 +735,14 @@ video {
   font-weight: 700;
 }
 
+.leading-normal {
+  line-height: 1.5;
+}
+
+.\!leading-normal {
+  line-height: 1.5 !important;
+}
+
 .tracking-tighter {
   letter-spacing: -0.05em;
 }
@@ -728,10 +756,6 @@ video {
   text-decoration-line: underline;
 }
 
-.opacity-30 {
-  opacity: 0.3;
-}
-
 .opacity-70 {
   opacity: 0.7;
 }
@@ -739,7 +763,6 @@ video {
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  padding: 2rem 3rem;
 }
 
 p,li {
@@ -789,6 +812,34 @@ p,li {
 
   50% {
     color: black;
+  }
+}
+
+@media (min-width: 380px) {
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:text-\[100px\] {
+    font-size: 100px;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 

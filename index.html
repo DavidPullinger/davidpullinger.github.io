@@ -2,6 +2,7 @@
     <!DOCTYPE html>
     <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
@@ -9,14 +10,21 @@
         <script src="assets/main.js" defer></script>
         <title>HOME | david</title>
     </head>
-    <body class="bg-primary">
-        <div class="flex justify-between">
-            <p id="title" class="font-bold pb-5 underline text-lg">David Pullinger</p>
-            <p>github</p>
+    <body class="bg-primary py-4 px-6 md:py-8 md:px-12">
+        <div class="flex justify-between items-center mb-5">
+            <p id="title" class="font-bold underline text-lg">David Pullinger</p>
+            <div class="flex gap-3 items-center">
+                <a href="https://github.com/DavidPullinger" target="_blank" rel="noreferrer">
+                    <img class="w-6" src="assets/github.png"/>
+                </a>
+                <a href="https://www.linkedin.com/in/david-pullinger-94a3a420b/" target="_blank" rel="noreferrer">
+                    <img class="w-6" src="assets/linkedin.png"/>
+                </a>
+            </div>
         </div>
-        <div class="py-3 h-screen relative">
-            <h1 class="text-[100px] pb-3 font-bold mono">$ whoami<span class="blinking-cursor">|</span></h1>
-            <div class="text-lg flex flex-col gap-3">
+        <div class="py-3 h-[100svh] relative">
+            <h1 class="text-5xl sm:text-6xl !leading-normal md:text-[100px] pb-3 font-bold mono">$ whoami<span class="blinking-cursor">|</span></h1>
+            <div class="text-base md:text-lg flex flex-col gap-3">
                 <div>
                     <p class="text-secondary font-bold text-2xl">01</p>
                     <p>Dynamic, results-driven recent graduate with a robust academic background in Computer Science and Mathematics.</p>
@@ -30,10 +38,10 @@
                     <p>Hands-on experience in full-stack development and a keen interest in cutting-edge technologies like big data, blockchain, and machine learning.</p>
                 </div>
             </div>
-            <div id="scroll-indicator" class="absolute bottom-[12%] ml-[50%] -translate-x-1/2 border-4 border-secondary rounded-full h-20 w-10"></div>
+            <div id="scroll-indicator" class="absolute bottom-[12%] right-0 border-4 border-secondary rounded-full h-20 w-10"></div>
         </div>
         <div class="py-3 flex flex-col gap-3">
-            <h1 class="text-[100px] pb-3 font-bold mono tracking-tighter">$ ls projects<span class="blinking-cursor">|</span></h1>
+            <h1 class="text-5xl sm:text-6xl !leading-normal md:text-[100px] pb-3 font-bold mono tracking-tighter">$ ls projects<span class="blinking-cursor">|</span></h1>
             <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-6">
                 
     <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
@@ -41,7 +49,7 @@
             <h2 class="text-2xl font-bold">Temp Project</h2>
             <div class="flex gap-3 items-center">
                 <a target="_blank" rel="noreferrer" href=www.google.com>
-                    <img class="w-6" src="assets/github-mark.png"/>
+                    <img class="w-6" src="assets/github.png"/>
                 </a>
                 
             </div>
@@ -58,21 +66,21 @@
     
     <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
         <div class="flex justify-between items-center">
-            <h2 class="text-2xl font-bold">Temp Project</h2>
+            <h2 class="text-2xl font-bold"></h2>
             <div class="flex gap-3 items-center">
-                <a target="_blank" rel="noreferrer" href=https://www.google.com>
-                    <img class="w-6" src="assets/github-mark.png"/>
+                <a target="_blank" rel="noreferrer" href=>
+                    <img class="w-6" src="assets/github.png"/>
                 </a>
-                <a target="_blank" rel="noreferrer" href=https://www.example.com><img class="w-6" src="assets/web.png"/></a>
+                
             </div>
         </div>
-        <h3 class="text-xl opacity-70 -mt-3">Personal Project</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor pharetra magna non sollicitudin. Maecenas et mi nunc. Maecenas nisl odio, ultrices accumsan imperdiet sit amet, molestie eu mi. Praesent pulvinar urna ut erat convallis, id porta nulla scelerisque. Morbi luctus massa vel ex fermentum molestie. Proin odio risus, condimentum in diam in, facilisis volutpat odio. Phasellus in quam dolor. Cras finibus nec lectus at feugiat. Quisque mollis sem ac felis mattis venenatis eu id lectus. Proin rhoncus sapien id arcu ullamcorper fermentum. Nam maximus sodales cursus.</p>
+        <h3 class="text-xl opacity-70 -mt-3">University Project</h3>
+        <p></p>
         <div class="flex gap-3">
-            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">HTML</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">CSS</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">JS</p>
+            
         </div>
         <div class="flex gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
-            <img src=projects/images/image1.png alt=images/image1.png class="w-[70%] rounded-lg" /><img src=projects/images/image2.png alt=images/image2.png class="w-[70%] rounded-lg" />
+            
         </div>
     </div>
     
@@ -81,7 +89,7 @@
             <h2 class="text-2xl font-bold">Temp Project</h2>
             <div class="flex gap-3 items-center">
                 <a target="_blank" rel="noreferrer" href=www.google.com>
-                    <img class="w-6" src="assets/github-mark.png"/>
+                    <img class="w-6" src="assets/github.png"/>
                 </a>
                 
             </div>
@@ -101,7 +109,7 @@
             <h2 class="text-2xl font-bold">Temp Project</h2>
             <div class="flex gap-3 items-center">
                 <a target="_blank" rel="noreferrer" href=www.bing.com>
-                    <img class="w-6" src="assets/github-mark.png"/>
+                    <img class="w-6" src="assets/github.png"/>
                 </a>
                 
             </div>
