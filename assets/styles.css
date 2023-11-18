@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 2rem 3rem;
+}
+p,li {
+    max-width: 60ch;
+}
+.mono {
+    font-family: 'Space Mono', monospace;
+}
+#scroll-indicator::before {
+    content: '';
+    width: 1rem;
+    background-color: #DB6443;
+    position: absolute;
+    border-radius: 9999px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    animation: 1s drop linear alternate infinite;
+}
+@keyframes drop {
+    0% {
+        top: 5px;
+        height: 2rem;
+    }
+    50% {
+        top: 1.5rem;
+        height: 2rem;
+    }
+    100% {
+        top: calc(2.5rem + 1rem - 5px);
+        height: 1rem;
+    }
+}
+
+.blinking-cursor {
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}

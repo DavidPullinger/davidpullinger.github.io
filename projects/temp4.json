@@ -1,9 +1,8 @@
 {
     "name": "Temp Project",
     "type": "Personal",
-    "giturl": "https://www.google.com",
-    "url": "https://www.example.com",
+    "giturl": "www.bing.com",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor pharetra magna non sollicitudin. Maecenas et mi nunc. Maecenas nisl odio, ultrices accumsan imperdiet sit amet, molestie eu mi. Praesent pulvinar urna ut erat convallis, id porta nulla scelerisque. Morbi luctus massa vel ex fermentum molestie. Proin odio risus, condimentum in diam in, facilisis volutpat odio. Phasellus in quam dolor. Cras finibus nec lectus at feugiat. Quisque mollis sem ac felis mattis venenatis eu id lectus. Proin rhoncus sapien id arcu ullamcorper fermentum. Nam maximus sodales cursus.",
     "technologies": ["HTML","CSS", "JS"],
-    "images": ["images/image1.png", "images/image2.png"]
+    "images": []
 }

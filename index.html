@@ -4,33 +4,119 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="dist_styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/dist_styles.css">
+        <script src="assets/main.js" defer></script>
         <title>HOME | david</title>
     </head>
-    <body>
+    <body class="bg-primary">
         <div class="flex justify-between">
             <p id="title" class="font-bold pb-5 underline text-lg">David Pullinger</p>
             <p>github</p>
         </div>
-        <div class="py-3">
-            <h1 class="text-5xl pb-2 font-black">About Me</h1>
-            <p class="w-[60ch]">Dynamic, results-driven recent graduate with a robust academic background in Computer Science and Mathematics. Excel at tackling intricate technical challenges and thrive in high-stakes scenarios, driven by a genuine passion for critical problem-solving. Hands-on experience in full-stack development and a keen interest in cutting-edge technologies like big data, computer vision, and machine learning.</p>
+        <div class="py-3 h-screen relative">
+            <h1 class="text-[100px] pb-3 font-bold mono">$ whoami<span class="blinking-cursor">|</span></h1>
+            <div class="text-lg flex flex-col gap-3">
+                <div>
+                    <p class="text-secondary font-bold text-2xl">01</p>
+                    <p>Dynamic, results-driven recent graduate with a robust academic background in Computer Science and Mathematics.</p>
+                </div>
+                <div>
+                    <p class="text-secondary font-bold text-2xl">02</p>
+                    <p>Excel at tackling intricate technical challenges and thrive in high-stakes scenarios, driven by a genuine passion for critical problem-solving.</p>
+                </div>
+                <div>
+                    <p class="text-secondary font-bold text-2xl">03</p>
+                    <p>Hands-on experience in full-stack development and a keen interest in cutting-edge technologies like big data, blockchain, and machine learning.</p>
+                </div>
+            </div>
+            <div id="scroll-indicator" class="absolute bottom-[12%] ml-[50%] -translate-x-1/2 border-4 border-secondary rounded-full h-20 w-10"></div>
         </div>
-        <div class="py-3">
-            <h1 class="text-5xl pb-2 font-black">Projects</h1>
-            
-    <div class="border-4 border-black">
-        <h2>Temp Project</h2>
+        <div class="py-3 flex flex-col gap-3">
+            <h1 class="text-[100px] pb-3 font-bold mono tracking-tighter">$ ls projects<span class="blinking-cursor">|</span></h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-6">
+                
+    <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Temp Project</h2>
+            <div class="flex gap-3 items-center">
+                <a target="_blank" rel="noreferrer" href=www.google.com>
+                    <img class="w-6" src="assets/github-mark.png"/>
+                </a>
+                
+            </div>
+        </div>
+        <h3 class="text-xl opacity-70 -mt-3">Personal Project</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor pharetra magna non sollicitudin. Maecenas et mi nunc. Maecenas nisl odio, ultrices accumsan imperdiet sit amet, molestie eu mi. Praesent pulvinar urna ut erat convallis, id porta nulla scelerisque. Morbi luctus massa vel ex fermentum molestie. Proin odio risus, condimentum in diam in, facilisis volutpat odio. Phasellus in quam dolor. Cras finibus nec lectus at feugiat. Quisque mollis sem ac felis mattis venenatis eu id lectus. Proin rhoncus sapien id arcu ullamcorper fermentum. Nam maximus sodales cursus.</p>
-        <div class="technologies">
-    <p>HTML</p><p>CSS</p><p>JS</p>
+        <div class="flex gap-3">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">HTML</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">CSS</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">JS</p>
         </div>
-        <div class="images">
-    <img src="images/image1.jpeg" alt="image1.jpeg"><img src="images/image2.jpeg" alt="image2.jpeg">
+        <div class="flex gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            <img src=projects/image1.png alt=image1.png class="w-[70%] rounded-lg" /><img src=projects/image2.png alt=image2.png class="w-[70%] rounded-lg" />
         </div>
     </div>
     
+    <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Temp Project</h2>
+            <div class="flex gap-3 items-center">
+                <a target="_blank" rel="noreferrer" href=https://www.google.com>
+                    <img class="w-6" src="assets/github-mark.png"/>
+                </a>
+                <a target="_blank" rel="noreferrer" href=https://www.example.com><img class="w-6" src="assets/web.png"/></a>
+            </div>
+        </div>
+        <h3 class="text-xl opacity-70 -mt-3">Personal Project</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor pharetra magna non sollicitudin. Maecenas et mi nunc. Maecenas nisl odio, ultrices accumsan imperdiet sit amet, molestie eu mi. Praesent pulvinar urna ut erat convallis, id porta nulla scelerisque. Morbi luctus massa vel ex fermentum molestie. Proin odio risus, condimentum in diam in, facilisis volutpat odio. Phasellus in quam dolor. Cras finibus nec lectus at feugiat. Quisque mollis sem ac felis mattis venenatis eu id lectus. Proin rhoncus sapien id arcu ullamcorper fermentum. Nam maximus sodales cursus.</p>
+        <div class="flex gap-3">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">HTML</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">CSS</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">JS</p>
+        </div>
+        <div class="flex gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            <img src=projects/images/image1.png alt=images/image1.png class="w-[70%] rounded-lg" /><img src=projects/images/image2.png alt=images/image2.png class="w-[70%] rounded-lg" />
+        </div>
+    </div>
+    
+    <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Temp Project</h2>
+            <div class="flex gap-3 items-center">
+                <a target="_blank" rel="noreferrer" href=www.google.com>
+                    <img class="w-6" src="assets/github-mark.png"/>
+                </a>
+                
+            </div>
+        </div>
+        <h3 class="text-xl opacity-70 -mt-3">Personal Project</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor pharetra magna non sollicitudin. Maecenas et mi nunc. Maecenas nisl odio, ultrices accumsan imperdiet sit amet, molestie eu mi. Praesent pulvinar urna ut erat convallis, id porta nulla scelerisque. Morbi luctus massa vel ex fermentum molestie. Proin odio risus, condimentum in diam in, facilisis volutpat odio. Phasellus in quam dolor. Cras finibus nec lectus at feugiat. Quisque mollis sem ac felis mattis venenatis eu id lectus. Proin rhoncus sapien id arcu ullamcorper fermentum. Nam maximus sodales cursus.</p>
+        <div class="flex gap-3">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">HTML</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">CSS</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">JS</p>
+        </div>
+        <div class="flex gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            <img src=projects/images/image1.png alt=images/image1.png class="w-[70%] rounded-lg" /><img src=projects/images/image2.png alt=images/image2.png class="w-[70%] rounded-lg" />
+        </div>
+    </div>
+    
+    <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Temp Project</h2>
+            <div class="flex gap-3 items-center">
+                <a target="_blank" rel="noreferrer" href=www.bing.com>
+                    <img class="w-6" src="assets/github-mark.png"/>
+                </a>
+                
+            </div>
+        </div>
+        <h3 class="text-xl opacity-70 -mt-3">Personal Project</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor pharetra magna non sollicitudin. Maecenas et mi nunc. Maecenas nisl odio, ultrices accumsan imperdiet sit amet, molestie eu mi. Praesent pulvinar urna ut erat convallis, id porta nulla scelerisque. Morbi luctus massa vel ex fermentum molestie. Proin odio risus, condimentum in diam in, facilisis volutpat odio. Phasellus in quam dolor. Cras finibus nec lectus at feugiat. Quisque mollis sem ac felis mattis venenatis eu id lectus. Proin rhoncus sapien id arcu ullamcorper fermentum. Nam maximus sodales cursus.</p>
+        <div class="flex gap-3">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">HTML</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">CSS</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">JS</p>
+        </div>
+        <div class="flex gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            
+        </div>
+    </div>
+    
+            </div>
         </div>
     </body>
     </html>
