@@ -1,0 +1,10 @@
+{
+    "name": "Pychat",
+    "type": "University",
+    "year": 2022,
+    "giturl": "https://github.com/DavidPullinger/university-projects/tree/main/pychat",
+    "url": "",
+    "description": "A network application that can connect two or more users running seperate client applications through a single server. The application uses UDP on the transport layer and its own protocol on the application layer. State such as messages, groups and chats are persisted using a database.",
+    "technologies": ["Python","Tkinter","SQL","Networks"],
+    "images": ["pychat/1.png", "pychat/2.png", "pychat/3.png", "pychat/4.png"]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Falling Words",
+    "type": "University",
+    "year": 2021,
+    "giturl": "https://github.com/DavidPullinger/university-projects/tree/main/falling-words",
+    "url": "",
+    "description": "A simple Java game where the player must enter words in a text field before they hit the bottom of the screen. Each word's animation/state is independently controlled by a single thread, and has a random speed. Longer words result in higher scores.",
+    "technologies": ["Java", "Java Swing", "Concurrency", "Parallelism"],
+    "images": ["falling_words/1.png","falling_words/2.png","falling_words/3.png"]
+}
+

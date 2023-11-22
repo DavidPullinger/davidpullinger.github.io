@@ -1,0 +1,11 @@
+{
+    "name": "Frame Shifter",
+    "type": "University",
+    "year": 2022,
+    "giturl": "https://github.com/DavidPullinger/university-projects/tree/main/frame-shifter",
+    "url": "",
+    "description": "A program designed to create a video from a massive input image by recording the movement of a smaller window across the image, and outputting the window's view to a frame at each timestep (with additional options of inverting the pixel colors, or reversing the frames). These frames form a sequence suitable for video creation using tools like FFMPEG.",
+    "technologies": ["C++","Image Processing", "FFMPEG"],
+    "images": ["frame_shifter/1.gif", "frame_shifter/2.gif", "frame_shifter/3.gif", "frame_shifter/4.gif"]
+}
+

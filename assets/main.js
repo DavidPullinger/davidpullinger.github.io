@@ -1,6 +1,12 @@
-e = document.getElementById("scroll-indicator")
+scroller = document.getElementById("scroll-indicator")
+overlay = document.getElementById("overlay")
 window.addEventListener("scroll", () => {
     // decrease opacity of scroll indicator, according to its distance from top
     // use an exponential function rather than just linear so it is opaque for longer
-    e.style.opacity = (Math.exp(2*e.getBoundingClientRect().top/window.innerHeight)-1)
+    scroller.style.opacity = (Math.exp(2*scroller.getBoundingClientRect().top/window.innerHeight)-1)
 })
+
+const enlargeImage = (e) => {
+    e.target.classList.toggle("full-screen")
+    overlay.classList.toggle("hidden");
+}

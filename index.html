@@ -8,9 +8,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/dist_styles.css">
         <script src="assets/main.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="assets/logo.png">
         <title>HOME | david</title>
     </head>
     <body class="bg-primary py-4 px-6 md:py-8 md:px-12">
+        <div id="overlay" class="fixed inset-0 bg-black bg-opacity-70 hidden"></div>
         <div class="flex justify-between items-center mb-5">
             <p id="title" class="font-bold underline text-lg">David Pullinger</p>
             <div class="flex gap-3 items-center">
@@ -46,81 +48,161 @@
                 
     <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
         <div class="flex justify-between items-center">
-            <h2 class="text-2xl font-bold">Temp Project</h2>
+            <h2 class="text-2xl font-bold">Frame Shifter</h2>
             <div class="flex gap-3 items-center">
-                <a target="_blank" rel="noreferrer" href=www.google.com>
+                <a target="_blank" rel="noreferrer" href=https://github.com/DavidPullinger/university-projects/tree/main/frame-shifter>
                     <img class="w-6" src="assets/github.png"/>
                 </a>
                 
             </div>
         </div>
-        <h3 class="text-xl opacity-70 -mt-3">Personal Project</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor pharetra magna non sollicitudin. Maecenas et mi nunc. Maecenas nisl odio, ultrices accumsan imperdiet sit amet, molestie eu mi. Praesent pulvinar urna ut erat convallis, id porta nulla scelerisque. Morbi luctus massa vel ex fermentum molestie. Proin odio risus, condimentum in diam in, facilisis volutpat odio. Phasellus in quam dolor. Cras finibus nec lectus at feugiat. Quisque mollis sem ac felis mattis venenatis eu id lectus. Proin rhoncus sapien id arcu ullamcorper fermentum. Nam maximus sodales cursus.</p>
-        <div class="flex gap-3">
-            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">HTML</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">CSS</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">JS</p>
+        <h3 class="text-xl opacity-70 -mt-3">University Project &bull; 2022</h3>
+        <p>A program designed to create a video from a massive input image by recording the movement of a smaller window across the image, and outputting the window's view to a frame at each timestep (with additional options of inverting the pixel colors, or reversing the frames). These frames form a sequence suitable for video creation using tools like FFMPEG.</p>
+        <div class="flex gap-3 flex-wrap">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">C++</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Image Processing</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">FFMPEG</p>
         </div>
-        <div class="flex gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
-            <img src=projects/image1.png alt=image1.png class="w-[70%] rounded-lg" /><img src=projects/image2.png alt=image2.png class="w-[70%] rounded-lg" />
+        <div class="flex items-center gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            <img src=projects/images/frame_shifter/1.gif alt=frame_shifter/1.gif onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/frame_shifter/2.gif alt=frame_shifter/2.gif onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/frame_shifter/3.gif alt=frame_shifter/3.gif onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/frame_shifter/4.gif alt=frame_shifter/4.gif onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" />
         </div>
     </div>
     
     <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
         <div class="flex justify-between items-center">
-            <h2 class="text-2xl font-bold"></h2>
+            <h2 class="text-2xl font-bold">Connected Component Extractor</h2>
             <div class="flex gap-3 items-center">
-                <a target="_blank" rel="noreferrer" href=>
+                <a target="_blank" rel="noreferrer" href=https://github.com/DavidPullinger/university-projects/tree/main/connected-components>
                     <img class="w-6" src="assets/github.png"/>
                 </a>
                 
             </div>
         </div>
-        <h3 class="text-xl opacity-70 -mt-3">University Project</h3>
-        <p></p>
-        <div class="flex gap-3">
-            
+        <h3 class="text-xl opacity-70 -mt-3">University Project &bull; 2022</h3>
+        <p>A image processor which utilizes PGM images to extract connected components and output them in the form of a binary image. It allows users to define minimum and maximum component sizes while setting threshold values for segmentation. It employs algorithms to identify and isolate cohesive regions based on user-defined criteria, aiding in comprehensive image analysis and processing.</p>
+        <div class="flex gap-3 flex-wrap">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">C++</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Image Processing</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Unit Testing</p>
         </div>
-        <div class="flex gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
-            
+        <div class="flex items-center gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            <img src=projects/images/connected_comps/1.png alt=connected_comps/1.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/connected_comps/2.png alt=connected_comps/2.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/connected_comps/3.png alt=connected_comps/3.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/connected_comps/4.png alt=connected_comps/4.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/connected_comps/5.png alt=connected_comps/5.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/connected_comps/6.png alt=connected_comps/6.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" />
         </div>
     </div>
     
     <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
         <div class="flex justify-between items-center">
-            <h2 class="text-2xl font-bold">Temp Project</h2>
+            <h2 class="text-2xl font-bold">RL Package Finder</h2>
             <div class="flex gap-3 items-center">
-                <a target="_blank" rel="noreferrer" href=www.google.com>
+                <a target="_blank" rel="noreferrer" href=https://github.com/DavidPullinger/university-projects/tree/main/package-finder-rl>
                     <img class="w-6" src="assets/github.png"/>
                 </a>
                 
             </div>
         </div>
-        <h3 class="text-xl opacity-70 -mt-3">Personal Project</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor pharetra magna non sollicitudin. Maecenas et mi nunc. Maecenas nisl odio, ultrices accumsan imperdiet sit amet, molestie eu mi. Praesent pulvinar urna ut erat convallis, id porta nulla scelerisque. Morbi luctus massa vel ex fermentum molestie. Proin odio risus, condimentum in diam in, facilisis volutpat odio. Phasellus in quam dolor. Cras finibus nec lectus at feugiat. Quisque mollis sem ac felis mattis venenatis eu id lectus. Proin rhoncus sapien id arcu ullamcorper fermentum. Nam maximus sodales cursus.</p>
-        <div class="flex gap-3">
-            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">HTML</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">CSS</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">JS</p>
+        <h3 class="text-xl opacity-70 -mt-3">University Project &bull; 2022</h3>
+        <p>3 RL agents trained via Q-Learning which had 3 seperate objectives: to find 1 package, 3 packages (in any order) and 3 packages (in the order RGB) via the shortest path. Each agent has it's own reward function and various other hyperparameters.</p>
+        <div class="flex gap-3 flex-wrap">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">Python</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Q-Learning</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">ML</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">RL</p>
         </div>
-        <div class="flex gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
-            <img src=projects/images/image1.png alt=images/image1.png class="w-[70%] rounded-lg" /><img src=projects/images/image2.png alt=images/image2.png class="w-[70%] rounded-lg" />
+        <div class="flex items-center gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            <img src=projects/images/package-finder/1.png alt=package-finder/1.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/package-finder/2.png alt=package-finder/2.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/package-finder/3.png alt=package-finder/3.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" />
         </div>
     </div>
     
     <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
         <div class="flex justify-between items-center">
-            <h2 class="text-2xl font-bold">Temp Project</h2>
+            <h2 class="text-2xl font-bold">Handwritten Digit Recognition</h2>
             <div class="flex gap-3 items-center">
-                <a target="_blank" rel="noreferrer" href=www.bing.com>
+                <a target="_blank" rel="noreferrer" href=https://github.com/DavidPullinger/university-projects/tree/main/digit-recognition>
                     <img class="w-6" src="assets/github.png"/>
                 </a>
                 
             </div>
         </div>
-        <h3 class="text-xl opacity-70 -mt-3">Personal Project</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor pharetra magna non sollicitudin. Maecenas et mi nunc. Maecenas nisl odio, ultrices accumsan imperdiet sit amet, molestie eu mi. Praesent pulvinar urna ut erat convallis, id porta nulla scelerisque. Morbi luctus massa vel ex fermentum molestie. Proin odio risus, condimentum in diam in, facilisis volutpat odio. Phasellus in quam dolor. Cras finibus nec lectus at feugiat. Quisque mollis sem ac felis mattis venenatis eu id lectus. Proin rhoncus sapien id arcu ullamcorper fermentum. Nam maximus sodales cursus.</p>
-        <div class="flex gap-3">
-            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">HTML</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">CSS</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">JS</p>
+        <h3 class="text-xl opacity-70 -mt-3">University Project &bull; 2022</h3>
+        <p>Artificial Neural Network and Convolutional Neural Network classifiers for the MNIST handwritten digit dataset. Their performance with various parameters and hyperparameters is evaluated and compared.</p>
+        <div class="flex gap-3 flex-wrap">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">Python</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">PyTorch</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">ML</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">ANN</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">CNN</p>
         </div>
-        <div class="flex gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
-            
+        <div class="flex items-center gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            <img src=projects/images/digit_recog/1.png alt=digit_recog/1.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/digit_recog/2.png alt=digit_recog/2.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/digit_recog/3.png alt=digit_recog/3.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" />
+        </div>
+    </div>
+    
+    <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">X-Hand</h2>
+            <div class="flex gap-3 items-center">
+                <a target="_blank" rel="noreferrer" href=https://github.com/DavidPullinger/university-projects/tree/main/x-hand>
+                    <img class="w-6" src="assets/github.png"/>
+                </a>
+                
+            </div>
+        </div>
+        <h3 class="text-xl opacity-70 -mt-3">University Project &bull; 2022</h3>
+        <p>A comprehensive X-ray image processor, focussed on extracting a hand from an X-ray. The X-ray image goes through a series of steps in a pipeline, including preprocessing, extraction, component analysis and realignment. A web application is also implemented to provide a user friendly interface for the X-ray processor.</p>
+        <div class="flex gap-3 flex-wrap">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">Python</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">OpenCV</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Numpy</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">HTML</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">CSS</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">JavaScript</p>
+        </div>
+        <div class="flex items-center gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            <img src=projects/images/xhand/1.png alt=xhand/1.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/xhand/2.png alt=xhand/2.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/xhand/3.png alt=xhand/3.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/xhand/4.png alt=xhand/4.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/xhand/5.png alt=xhand/5.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/xhand/6.png alt=xhand/6.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" />
+        </div>
+    </div>
+    
+    <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Pychat</h2>
+            <div class="flex gap-3 items-center">
+                <a target="_blank" rel="noreferrer" href=https://github.com/DavidPullinger/university-projects/tree/main/pychat>
+                    <img class="w-6" src="assets/github.png"/>
+                </a>
+                
+            </div>
+        </div>
+        <h3 class="text-xl opacity-70 -mt-3">University Project &bull; 2022</h3>
+        <p>A network application that can connect two or more users running seperate client applications through a single server. The application uses UDP on the transport layer and its own protocol on the application layer. State such as messages, groups and chats are persisted using a database.</p>
+        <div class="flex gap-3 flex-wrap">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">Python</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Tkinter</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">SQL</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Networks</p>
+        </div>
+        <div class="flex items-center gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            <img src=projects/images/pychat/1.png alt=pychat/1.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/pychat/2.png alt=pychat/2.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/pychat/3.png alt=pychat/3.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/pychat/4.png alt=pychat/4.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" />
+        </div>
+    </div>
+    
+    <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Falling Words</h2>
+            <div class="flex gap-3 items-center">
+                <a target="_blank" rel="noreferrer" href=https://github.com/DavidPullinger/university-projects/tree/main/falling-words>
+                    <img class="w-6" src="assets/github.png"/>
+                </a>
+                
+            </div>
+        </div>
+        <h3 class="text-xl opacity-70 -mt-3">University Project &bull; 2021</h3>
+        <p>A simple Java game where the player must enter words in a text field before they hit the bottom of the screen. Each word's animation/state is independently controlled by a single thread, and has a random speed. Longer words result in higher scores.</p>
+        <div class="flex gap-3 flex-wrap">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">Java</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Java Swing</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Concurrency</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Parallelism</p>
+        </div>
+        <div class="flex items-center gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            <img src=projects/images/falling_words/1.png alt=falling_words/1.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/falling_words/2.png alt=falling_words/2.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/falling_words/3.png alt=falling_words/3.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" />
+        </div>
+    </div>
+    
+    <div class="border-2 border-black p-4 flex flex-col gap-3 h-fit bg-secondary" style="box-shadow: 8px 8px 0 0 black">
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Parallel Median Filter</h2>
+            <div class="flex gap-3 items-center">
+                <a target="_blank" rel="noreferrer" href=https://github.com/DavidPullinger/university-projects/tree/main/parallel-median-filter>
+                    <img class="w-6" src="assets/github.png"/>
+                </a>
+                
+            </div>
+        </div>
+        <h3 class="text-xl opacity-70 -mt-3">University Project &bull; 2021</h3>
+        <p>The median filter, a fundamental tool in signal processing and image analysis, serves to reduce noise while preserving essential features within a dataset. This project implemented and explored the efficiency and performance of serial and parallel implementations of the median filter applied to one-dimensional data. </p>
+        <div class="flex gap-3 flex-wrap">
+            <p class="bg-accent border-2 border-black px-2 py-1 font-bold">Java</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Parallelism</p><p class="bg-accent border-2 border-black px-2 py-1 font-bold">Concurrency</p>
+        </div>
+        <div class="flex items-center gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            <img src=projects/images/med_filter/1.png alt=med_filter/1.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/med_filter/2.png alt=med_filter/2.png onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/med_filter/3.jpg alt=med_filter/3.jpg onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" /><img src=projects/images/med_filter/4.jpg alt=med_filter/4.jpg onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" />
         </div>
     </div>
     

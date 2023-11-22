@@ -1,0 +1,11 @@
+{
+    "name": "Connected Component Extractor",
+    "type": "University",
+    "year": 2022,
+    "giturl": "https://github.com/DavidPullinger/university-projects/tree/main/connected-components",
+    "url": "",
+    "description": "A image processor which utilizes PGM images to extract connected components and output them in the form of a binary image. It allows users to define minimum and maximum component sizes while setting threshold values for segmentation. It employs algorithms to identify and isolate cohesive regions based on user-defined criteria, aiding in comprehensive image analysis and processing.",
+    "technologies": ["C++","Image Processing", "Unit Testing"],
+    "images": ["connected_comps/1.png", "connected_comps/2.png", "connected_comps/3.png", "connected_comps/4.png", "connected_comps/5.png", "connected_comps/6.png"]
+}
+

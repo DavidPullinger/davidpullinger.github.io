@@ -1,0 +1,11 @@
+{
+    "name": "RL Package Finder",
+    "type": "University",
+    "year": 2022,
+    "giturl": "https://github.com/DavidPullinger/university-projects/tree/main/package-finder-rl",
+    "url": "",
+    "description": "3 RL agents trained via Q-Learning which had 3 seperate objectives: to find 1 package, 3 packages (in any order) and 3 packages (in the order RGB) via the shortest path. Each agent has it's own reward function and various other hyperparameters.",
+    "technologies": ["Python","Q-Learning","ML","RL"],
+    "images": ["package-finder/1.png", "package-finder/2.png", "package-finder/3.png"]
+}
+

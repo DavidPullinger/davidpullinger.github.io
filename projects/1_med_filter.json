@@ -1,0 +1,10 @@
+{
+    "name": "Parallel Median Filter",
+    "type": "University",
+    "year": 2021,
+    "giturl": "https://github.com/DavidPullinger/university-projects/tree/main/parallel-median-filter",
+    "url": "",
+    "description": "The median filter, a fundamental tool in signal processing and image analysis, serves to reduce noise while preserving essential features within a dataset. This project implemented and explored the efficiency and performance of serial and parallel implementations of the median filter applied to one-dimensional data. ",
+    "technologies": ["Java", "Parallelism", "Concurrency"],
+    "images": ["med_filter/1.png","med_filter/2.png","med_filter/3.jpg","med_filter/4.jpg"]
+}

@@ -12,6 +12,23 @@ p,li {
 .mono {
     font-family: 'Space Mono', monospace;
 }
+ .full-screen {
+    position: fixed;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    z-index: 9999;
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    margin: auto;
+    object-fit: contain;
+  }
+.full-screen:hover {
+    cursor: zoom-out;
+}
 #scroll-indicator::before {
     content: '';
     width: 1rem;

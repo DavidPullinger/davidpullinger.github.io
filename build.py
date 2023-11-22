@@ -2,6 +2,7 @@ import os
 import json
 
 project_dir = 'projects'
+project_image_dir = f'{project_dir}/images'
 output_file = 'index.html'
 
 def generate_technologies(technologies):
@@ -13,7 +14,7 @@ def generate_technologies(technologies):
 def generate_images(images):
     html = ""
     for image in images:
-        html += f'<img src={project_dir}/{image} alt={image} class="w-[70%] rounded-lg" />'
+        html += f'<img src={project_image_dir}/{image} alt={image} onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" />'
     return html
 
 def generate_project_html(project):
@@ -29,12 +30,12 @@ def generate_project_html(project):
                  if project.get("url") else ''}
             </div>
         </div>
-        <h3 class="text-xl opacity-70 -mt-3">{project['type']} Project</h3>
+        <h3 class="text-xl opacity-70 -mt-3">{project['type']} Project &bull; {project['year']}</h3>
         <p>{project['description']}</p>
-        <div class="flex gap-3">
+        <div class="flex gap-3 flex-wrap">
             {generate_technologies(project['technologies'])}
         </div>
-        <div class="flex gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+        <div class="flex items-center gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
             {generate_images(project['images'])}
         </div>
     </div>
@@ -42,7 +43,9 @@ def generate_project_html(project):
     return html
 
 projects = []
-for filename in os.listdir(project_dir):
+filenames = sorted(os.listdir(project_dir),reverse=True)
+filenames.remove("template.json")
+for filename in filenames:
     if filename.endswith('.json'):
         with open(os.path.join(project_dir, filename)) as file:
             project_data = json.load(file)
@@ -64,9 +67,11 @@ with open(output_file, 'w') as output:
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/dist_styles.css">
         <script src="assets/main.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="assets/logo.png">
         <title>HOME | david</title>
     </head>
     <body class="bg-primary py-4 px-6 md:py-8 md:px-12">
+        <div id="overlay" class="fixed inset-0 bg-black bg-opacity-70 hidden"></div>
         <div class="flex justify-between items-center mb-5">
             <p id="title" class="font-bold underline text-lg">David Pullinger</p>
             <div class="flex gap-3 items-center">

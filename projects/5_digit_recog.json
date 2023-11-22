@@ -1,0 +1,11 @@
+{
+    "name": "Handwritten Digit Recognition",
+    "type": "University",
+    "year": 2022,
+    "giturl": "https://github.com/DavidPullinger/university-projects/tree/main/digit-recognition",
+    "url": "",
+    "description": "Artificial Neural Network and Convolutional Neural Network classifiers for the MNIST handwritten digit dataset. Their performance with various parameters and hyperparameters is evaluated and compared.",
+    "technologies": ["Python","PyTorch","ML","ANN","CNN"],
+    "images": ["digit_recog/1.png", "digit_recog/2.png", "digit_recog/3.png"]
+}
+

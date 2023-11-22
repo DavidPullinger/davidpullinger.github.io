@@ -1,0 +1,11 @@
+{
+    "name": "X-Hand",
+    "type": "University",
+    "year": 2022,
+    "giturl": "https://github.com/DavidPullinger/university-projects/tree/main/x-hand",
+    "url": "",
+    "description": "A comprehensive X-ray image processor, focussed on extracting a hand from an X-ray. The X-ray image goes through a series of steps in a pipeline, including preprocessing, extraction, component analysis and realignment. A web application is also implemented to provide a user friendly interface for the X-ray processor.",
+    "technologies": ["Python","OpenCV","Numpy","HTML","CSS","JavaScript"],
+    "images": ["xhand/1.png", "xhand/2.png", "xhand/3.png", "xhand/4.png", "xhand/5.png", "xhand/6.png"]
+}
+

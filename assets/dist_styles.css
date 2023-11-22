@@ -534,6 +534,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -542,12 +546,20 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .bottom-\[12\%\] {
   bottom: 12%;
 }
 
 .right-0 {
   right: 0px;
+}
+
+.isolate {
+  isolation: isolate;
 }
 
 .-mt-3 {
@@ -566,6 +578,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-20 {
   height: 5rem;
 }
@@ -577,6 +593,10 @@ video {
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.max-h-80 {
+  max-height: 20rem;
 }
 
 .w-10 {
@@ -595,12 +615,32 @@ video {
   width: 100%;
 }
 
+.max-w-\[70\%\] {
+  max-width: 70%;
+}
+
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
+.max-w-\[90\%\] {
+  max-width: 90%;
+}
+
+.cursor-zoom-in {
+  cursor: zoom-in;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -654,6 +694,11 @@ video {
   background-color: rgb(129 178 154 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(242 204 143 / var(--tw-bg-opacity));
@@ -662,6 +707,10 @@ video {
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(219 100 67 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
 }
 
 .p-4 {
@@ -697,10 +746,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -708,11 +753,6 @@ video {
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -733,10 +773,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.leading-normal {
-  line-height: 1.5;
 }
 
 .\!leading-normal {
@@ -760,6 +796,10 @@ video {
   opacity: 0.7;
 }
 
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -771,6 +811,26 @@ p,li {
 
 .mono {
   font-family: 'Space Mono', monospace;
+}
+
+.full-screen {
+  position: fixed;
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  z-index: 9999;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  margin: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.full-screen:hover {
+  cursor: zoom-out;
 }
 
 #scroll-indicator::before {
