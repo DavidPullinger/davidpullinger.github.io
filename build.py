@@ -67,7 +67,7 @@ with open(output_file, 'w') as output:
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/dist_styles.css">
         <script src="assets/main.js" defer></script>
-        <link rel="icon" type="image/x-icon" href="assets/logo.png">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
         <title>HOME | david</title>
     </head>
     <body class="bg-primary py-4 px-6 md:py-8 md:px-12">
