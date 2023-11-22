@@ -1,0 +1,11 @@
+{
+    "name": "3D Model Lighting",
+    "type": "University",
+    "year": 2023,
+    "giturl": "https://github.com/DavidPullinger/university-projects/tree/main/3d-model-lighting",
+    "url": "",
+    "description": "A graphics program which utilizes OpenGL, SDL, GLEW, and GLM to render models and textures. It features transformation controls for models and views, lighting manipulation, and implements normal mapping and skybox rendering. It allows loading various models and textures and offers interactive transformations and lighting adjustments.",
+    "technologies": ["C++","OpenGL","Graphics","Shaders"],
+    "images": ["3d_model_lighting/1.png", "3d_model_lighting/2.png", "3d_model_lighting/3.png", "3d_model_lighting/4.png"],
+    "videos": ["3d_model_lighting/1.mp4"]
+}

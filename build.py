@@ -3,12 +3,23 @@ import json
 
 project_dir = 'projects'
 project_image_dir = f'{project_dir}/images'
+project_video_dir = f'{project_dir}/videos'
 output_file = 'index.html'
 
 def generate_technologies(technologies):
     html = ""
     for technology in technologies:
         html += f'<p class="bg-accent border-2 border-black px-2 py-1 font-bold">{technology}</p>'
+    return html
+
+def generate_videos(videos):
+    html = ""
+    for video in videos:
+        html += f'''
+        <video autoplay muted loop onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in">
+            <source src={project_video_dir}/{video} type="video/mp4">
+            Your browser does not support the video tag
+        </video>'''
     return html
 
 def generate_images(images):
@@ -36,6 +47,7 @@ def generate_project_html(project):
             {generate_technologies(project['technologies'])}
         </div>
         <div class="flex items-center gap-3 w-full overflow-x-scroll scroll-shadows" style="overscroll-behavior-x:none">
+            {generate_videos(project['videos']) if project.get('videos') else ""}
             {generate_images(project['images'])}
         </div>
     </div>
