@@ -5,7 +5,7 @@
     "giturl": "https://github.com/DavidPullinger/pixelbands-main",
     "url": "https://pixelbands-main.vercel.app/",
     "description": "A cryptocurrency project which was the first generative art and music collection on Solana, creating 4444 Band Member NFTs playing either guitar, bass, drums, or keys. Developed the project's main website, as well as two full stack services: a launchpad allowing music artists to mint NFTs from their music, and a studio allowing owners of the 4444 band members to mix their NFTs into a single Band NFT.",
-    "technologies": ["Next.js","Javascript","CSS","TailwindCSS"],
+    "technologies": ["Next.js","Node.js","Cryptocurrency","Javascript","CSS","TailwindCSS"],
     "images": ["pixelbands_main/1.png", "pixelbands_main/2.png", "pixelbands_main/3.png", "pixelbands_main/4.png","pixelbands_main/5.png", "pixelbands_main/6.png", "pixelbands_main/7.png", "pixelbands_main/8.JPG"],
     "videos": ["pixelbands_main/1.mp4"]
 }
