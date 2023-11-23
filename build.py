@@ -41,7 +41,7 @@ def generate_project_html(project):
                  if project.get("url") else ''}
             </div>
         </div>
-        <h3 class="text-xl opacity-70 -mt-3">{project['type']} Project &bull; {project['year']}</h3>
+        <h3 class="text-xl text-[rgba(0,0,0,0.7)] -mt-3">{project['type']} Project &bull; {project['year']}</h3>
         <p>{project['description']}</p>
         <div class="flex gap-3 flex-wrap">
             {generate_technologies(project['technologies'])}

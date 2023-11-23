@@ -776,6 +776,50 @@ video {
   color: rgb(219 100 67 / var(--tw-text-opacity));
 }
 
+.text-red-800 {
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-\[rbga\(0\2c 0\2c 01\)\] {
+  color: rbga(0,0,01);
+}
+
+.text-\[rbga\(0\2c 0\2c 0\2c 1\)\] {
+  color: rbga(0,0,0,1);
+}
+
+.text-\[rbga\(0\2c 0\2c 0\2c 0\.5\)\] {
+  color: rbga(0,0,0,0.5);
+}
+
+.text-\[rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
+  color: rgba(0,0,0,0.5);
+}
+
+.text-\[rgba\(0\2c 0\2c 0\2c 0\.8\)\] {
+  color: rgba(0,0,0,0.8);
+}
+
+.text-\[rgba\(0\2c 0\2c 0\2c 0\.7\)\] {
+  color: rgba(0,0,0,0.7);
+}
+
 .underline {
   text-decoration-line: underline;
 }
