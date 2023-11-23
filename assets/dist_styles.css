@@ -607,20 +607,8 @@ video {
   width: 1.5rem;
 }
 
-.w-\[70\%\] {
-  width: 70%;
-}
-
 .w-full {
   width: 100%;
-}
-
-.max-w-\[70\%\] {
-  max-width: 70%;
-}
-
-.max-w-\[80\%\] {
-  max-width: 80%;
 }
 
 .max-w-\[90\%\] {
@@ -829,7 +817,8 @@ p,li {
      object-fit: contain;
 }
 
-.full-screen:hover {
+.full-screen:hover,
+#overlay:hover {
   cursor: zoom-out;
 }
 

@@ -26,7 +26,8 @@ p,li {
     margin: auto;
     object-fit: contain;
   }
-.full-screen:hover {
+.full-screen:hover,
+#overlay:hover {
     cursor: zoom-out;
 }
 #scroll-indicator::before {

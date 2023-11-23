@@ -16,7 +16,7 @@ def generate_videos(videos):
     html = ""
     for video in videos:
         html += f'''
-        <video controls autoplay muted loop onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in">
+        <video controls autoplay muted loop onclick="toggleImageFullscreen(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in">
             <source src={project_video_dir}/{video} type="video/mp4">
             Your browser does not support the video tag
         </video>'''
@@ -25,7 +25,7 @@ def generate_videos(videos):
 def generate_images(images):
     html = ""
     for image in images:
-        html += f'<img src={project_image_dir}/{image} alt={image} onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" />'
+        html += f'<img src={project_image_dir}/{image} alt={image} onclick="toggleImageFullscreen(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in" />'
     return html
 
 def generate_project_html(project):
@@ -83,7 +83,7 @@ with open(output_file, 'w') as output:
         <title>HOME | david</title>
     </head>
     <body class="bg-primary py-4 px-6 md:py-8 md:px-12">
-        <div id="overlay" class="fixed inset-0 bg-black bg-opacity-70 hidden"></div>
+        <div id="overlay" class="fixed inset-0 bg-black bg-opacity-70 hidden" onclick="toggleImageFullscreen(event)"></div>
         <div class="flex justify-between items-center mb-5">
             <p id="title" class="font-bold underline text-lg">David Pullinger</p>
             <div class="flex gap-3 items-center">

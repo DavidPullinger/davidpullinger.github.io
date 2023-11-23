@@ -6,7 +6,24 @@ window.addEventListener("scroll", () => {
     scroller.style.opacity = (Math.exp(2*scroller.getBoundingClientRect().top/window.innerHeight)-1)
 })
 
-const enlargeImage = (e) => {
-    e.target.classList.toggle("full-screen")
-    overlay.classList.toggle("hidden");
+const toggleImageFullscreen = (e) => {
+    // get image, based on the target of the click
+    // if its the overlay, we need to get the image by its id
+    // otherwise, we can just use the target of the click event
+    e.preventDefault();
+    image = (e.target == overlay) ? document.getElementById("fullScreenImage") : e.target
+
+    // toggle image and overlay fullscreen properties
+    image.classList.toggle("full-screen")
+    overlay.classList.toggle("hidden")
+
+    // finally, based on if we are hiding or showing the image
+    // (i.e. it has an id)
+    // we set or remove it's id
+    if (image.id){
+        image.removeAttribute("id");
+    }
+    else {
+        image.id = "fullScreenImage";
+    }
 }
