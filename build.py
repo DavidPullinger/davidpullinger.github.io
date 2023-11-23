@@ -16,7 +16,7 @@ def generate_videos(videos):
     html = ""
     for video in videos:
         html += f'''
-        <video autoplay muted loop onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in">
+        <video controls autoplay muted loop onclick="enlargeImage(event)" class="max-w-[90%] max-h-80 rounded-lg flex cursor-zoom-in">
             <source src={project_video_dir}/{video} type="video/mp4">
             Your browser does not support the video tag
         </video>'''
